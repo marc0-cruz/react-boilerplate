@@ -1,5 +1,5 @@
-import React from 'react';
-
-export default () => {
+const App = () => {
   return <div>React Boilerplate with TypeScript + ESLint + Prettier</div>;
 };
+
+export default App;
