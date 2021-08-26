@@ -7,6 +7,7 @@ module.exports = {
 		},
 		ecmaVersion: 'latest',
 		sourceType: 'module',
+		files: ['*.ts', '*.tsx'],
 		project: ['./tsconfig.json'],
 		tsconfigRootDir: __dirname
 	},
@@ -46,6 +47,20 @@ module.exports = {
 						pattern: 'react',
 						group: 'external',
 						position: 'before'
+					},
+					{
+						pattern: '@ddm-design-system/**',
+						group: 'external',
+						position: 'after'
+					},
+					{
+						pattern: '@metyis-ds/**',
+						group: 'external',
+						position: 'after'
+					},
+					{
+						pattern: 'src/**',
+						group: 'internal'
 					}
 				],
 				pathGroupsExcludedImportTypes: ['react'],

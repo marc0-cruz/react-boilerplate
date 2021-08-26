@@ -27,5 +27,5 @@
 		"experimentalDecorators": true,
 		"emitDecoratorMetadata": true
 	},
-	"include": ["src/**/*"]
+	"include": ["src/**/*", ".eslintrc.js"]
 }
